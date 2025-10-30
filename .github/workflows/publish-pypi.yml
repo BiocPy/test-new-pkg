@@ -61,6 +61,7 @@ jobs:
         with:
           ref: gh-pages
           path: docs/_build/html
+        continue-on-error: true
 
       - name: Set version whitelists for delta build
         # We only build the current ref (tag or branch)
@@ -79,6 +80,7 @@ jobs:
 
       - name: Build new/updated docs
         run: |
+          mkdir -p docs/_build/html
           sphinx-multiversion docs docs/_build/html
 
       - name: Create .nojekyll
