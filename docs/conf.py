@@ -336,13 +336,13 @@ html_sidebars = {
         "sidebar/search.html",
         "sidebar/scroll-start.html",
         "sidebar/navigation.html",
-        "sidebar/versioning.html",
+        "sidebar/versions.html",
         "sidebar/scroll-end.html",
     ]
 }
 
 smv_version_dropdown = True
-smv_tag_whitelist = r'^v.*$'            # Build docs for tags starting with 'v' (e.g. v1.0.0)
+smv_tag_whitelist = r'^\d+\.\d+.*$'          # Build docs for tags starting with 'v' (e.g. v1.0.0)
 smv_branch_whitelist = r'^(main|master)$' # Build docs for main/master branches
 smv_remote_whitelist = r'^origin$'      # Only look at the 'origin' remote
 smv_prefer_remote_refs = False
