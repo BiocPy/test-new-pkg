@@ -1,0 +1,21 @@
+my\_new\_package package
+========================
+
+Submodules
+----------
+
+my\_new\_package.skeleton module
+--------------------------------
+
+.. automodule:: my_new_package.skeleton
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: my_new_package
+   :members:
+   :show-inheritance:
+   :undoc-members:
